@@ -16,7 +16,7 @@ jobs:
      - node-version: 14
        operating_system: ubuntu-latest
     include:
-     - node-version: 16
+     - node-version: 18
        operating_system: ubuntu-latest   
   runs-on: ${{matrix.operating_system}}
   steps:
