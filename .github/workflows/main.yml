@@ -13,6 +13,11 @@ jobs:
     exclude:
      - node-version: 12
        operating_system: windows-latest
+     - node-version: 14
+       operating_system: ubuntu-latest
+    include:
+     - node-version: 16
+       operating_system: ubuntu-latest   
   runs-on: ${{matrix.operating_system}}
   steps:
    - name: Clone the repo
